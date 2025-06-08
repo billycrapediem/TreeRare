@@ -1,0 +1,17 @@
+
+
+Q: This British racing driver came in third at the 2014 Bahrain GP2 Series round and was born in what year A:#Explanations First, at the 2014 Bahrain GP2 Series round, DAMS driver Jolyon Palmer came in third. Second, Jolyon Palmer (born 20 January 1991) is a British racing driver.#FINAL: The answer is 1991. Q: What band did Antony King work with that formed in 1985 in Manchester? A:#Explanations First, Antony King worked as house engineer for Simply Red. Second, Simply Red formed in 1985 in Manchester. #FINAL: The answer is Simply Red. 
+Q: How many inhabitants were in the city close to where Alberta Ferretti's studios was located? A:#Explanations First, Alberta Ferretti's studio is near Rimini. Second, Rimini is a city of 146,606 inhabitants.#FINAL: The answer is 146,606.
+Q: How many inhabitants were in the city close to where Alberta Ferretti’s studios was located?
+A: #Explanations First, Alberta Ferretti’s studio is near Rimini. Second, Rimini is a city of 146,606 inhabitants. #FINAL: The answer is 146,606.
+Q: TLC: Tables, Ladders & Chairs was a wrestling event featuring which American wrestler and rapper in the main event?
+A:#Explanations First, TLC: Tables, Ladders & Chairs was a wrestling event featuring John Cena in the main event. Second, John Cena is an American wrestler and rapper. #FINAL: The answer is John Felix Anthony Cena.
+Answer the following question: {Question}, with following documents: 
+{Documents}. For each question find as many answers as possible. (Answer should be as specific as possible)
+
+let's think step by step
+
+Your response should strictly follow the format:
+#Explanations :[give your step by step Analysis here ]
+
+#FINAL:

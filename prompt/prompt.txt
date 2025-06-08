@@ -1,0 +1,21 @@
+TASK: Diambiguate entity in the question based on the document and answer the question for each entity. 
+#Question: {Question}
+
+Instructions:
+1. Look for named entities in the question (not in context)
+2. Review context carefully. For each of the context, expand the context by providing more information related to the entities
+3. Identify and explain the entity referred to by the name in each context. Note any contextual clues or additional information that helps distinguish between the entities.
+4. If the entities are not the same, clarify and disambiguate each entity name based on the information in the document. 
+Final:
+5. Search sentences within the context as answer for ALL different entities you recognized. For an unique entity, there can be multiple answers, find ALL of them (DO NOT SUMMARIZE information). Your response should be long-form and detailed. 
+
+let's think step by step
+
+Your response should strictly follow the format:
+#Explanations (Step 1 - 4):[give your step by step Analysis here ]
+
+#FINAL(Step 5):
+Please ONLY reply according to this format
+
+
+

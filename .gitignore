@@ -1,0 +1,6 @@
+__pycache__/
+.flashrank_cache/
+data/
+corups/
+output_dir/
+script/
