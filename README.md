@@ -13,7 +13,7 @@ If you find our code or the paper useful, please cite the paper:
       url={https://arxiv.org/abs/2506.00331}, 
 }
 ```
-![main](image/)
+![main](image/main.png)
 ## Installing Dependency
 ```bash
 git clone git@github.com:billycrapediem/TreeRare.git
