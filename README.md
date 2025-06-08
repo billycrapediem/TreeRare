@@ -13,7 +13,7 @@ If you find our code or the paper useful, please cite the paper:
       url={https://arxiv.org/abs/2506.00331}, 
 }
 ```
-![main](image/main.png)
+![main](image/main_figure.png)
 ## Installing Dependency
 ```bash
 git clone git@github.com:billycrapediem/TreeRare.git
@@ -26,30 +26,37 @@ mkdir data
 ```
 We directly uses BM25 implemented through pyserini as retriver. 
 
-## Code organization
-The code is organizaed as follows:
-- prompt (prompt file)
-      - Ambig_Doc.txt (zero-shot cot prompt for ambigdocqa)
-      - asqa_prompt.txt (zero-shot cot prompt for asqa)
-      - hotpot_cot.txt (few-shot cot prompt for hotpotqa)
-- script
-      - deploy.sh (script for deploying llama3.3-70b)
-      - df1.sh (evaluating the performance on ASQA)
-      - experiment.sh (script to run all the experiment)
-- src
-      - eval
-            - disambigF1.py (generate df1 score)
-            - eval_ambigdoc.py(evalute the performance on ambigdocqa)
-            - eval_multi_hop.py (evaluate the performance on multihop-qa)
-      - ambigdoc_inference.py (run experiment on ambigdocqa)
-      - asqa_inference.py (run experiment on asqa)
-      - BM25.py (code for BM25 retriever)
-      - consituency_tree.py (code for the consituency tree)
-      - dependency.py (code for dependency tree)
-      - dpr.py (code for dpr retriever)
-      - hoppotqa_inference.py (run experiment on  multihop-qa)
-      - traverse_algo.py (traversing over the syntax tree)
-      - utils.py (contians bunch of utility function)
+## Directory Structure
+
+```plaintext
+.
+├── prompt/                     # Prompts used for CoT and zero-shot/few-shot settings
+│   ├── Ambig_Doc.txt           # Zero-shot CoT prompt for AmbigDocQA
+│   ├── asqa_prompt.txt         # Zero-shot CoT prompt for ASQA
+│   └── hotpot_cot.txt          # Few-shot CoT prompt for HotpotQA
+│
+├── script/                     # Shell scripts for deployment and running experiments
+│   ├── deploy.sh               # Script for deploying LLaMA 3.3-70B model
+│   ├── df1.sh                  # Evaluate DF1 performance on ASQA
+│   └── experiment.sh           # Run all experiments sequentially
+│
+├── src/                        # Source code
+│   ├── eval/                   # Evaluation scripts
+│   │   ├── disambigF1.py       # Compute Disambiguation F1 score
+│   │   ├── eval_ambigdoc.py    # Evaluate performance on AmbigDocQA
+│   │   └── eval_multi_hop.py   # Evaluate performance on multi-hop QA
+│   │
+│   ├── ambigdoc_inference.py   # Run inference on AmbigDocQA
+│   ├── asqa_inference.py       # Run inference on ASQA
+│   ├── BM25.py                 # BM25 retriever implementation
+│   ├── consituency_tree.py     # Constituency parse tree utilities
+│   ├── dependency.py           # Dependency tree parser
+│   ├── dpr.py                  # Dense Passage Retriever (DPR) code
+│   ├── hoppotqa_inference.py   # Run inference on HotpotQA (multi-hop)
+│   ├── traverse_algo.py        # Tree traversal algorithms
+│   └── utils.py                # Miscellaneous utility functions
+```
+
 ## Dataset
 In our exerpiment script, all the datasets are inthe `./data` folder. And all the model output is under `./output_dir' folder. 
 Access and download the ASQA dataset [here](https://github.com/google-research/language/tree/master/language/asqa).
